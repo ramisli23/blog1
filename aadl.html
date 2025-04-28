@@ -1,0 +1,298 @@
+<style>
+    #encrageJuridiqueBtn:hover {
+            background-color: #ff7f00; /* Hover effect */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transform: scale(1.05); /* Slight scale effect */
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        }
+    
+        #fileIcon:hover, #fileIcon2:hover {
+            transform: scale(1.1); /* Slight zoom effect */
+            transition: transform 0.3s ease;
+        }
+    
+        .welcome-page h2 {
+            color: #ffffff;
+        }
+    .text-shadow {
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    .btn {
+        border-radius: 30px;
+        font-size: 1.0rem;
+        padding: 12px 30px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .btn:hover {
+        transform: scale(1.05);
+    }
+    
+    
+    .action-btn {
+        background-color: #ff9f00 !important;
+        color: white;
+        border: none;
+        transition: all 0.3s ease;
+    }
+    
+    .action-btn:hover {
+        background-color: #ff7f00;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    
+    .file-box {
+        display: none;
+        background-color: #f4f9f4;
+        border-radius: 15px;
+        padding: 20px;
+        width: 250px;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .file-box:hover {
+        transform: scale(1.1);
+    }
+    
+    .file-icon {
+        font-size: 4rem;
+        color: #1e5a2e;
+    }
+    
+    .file-text {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #1e5a2e;
+        margin-top: 10px;
+    }
+    
+    .file-subtext {
+        font-size: 1rem;
+        color: #6c757d;
+    }
+    
+    @keyframes clignoter {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    
+    .clignotant {
+      animation: clignoter 3s infinite;
+      color: #ff7f00 !important; /* Orange */
+    }
+    
+    @media (max-width: 768px) {
+        .section-activation h2 {
+            font-size: 1.5rem;
+        }
+        .section-minassa h6 {
+            font-size: 1.2rem;
+        }
+        .btn {
+            font-size: 1rem;
+            padding: 10px 20px;
+        }
+        .file-box {
+            width: 200px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .file-box {
+            width: 150px;
+        }
+        .file-text {
+            font-size: 1rem;
+        }
+    }
+    
+    .content{
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+    </style>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Vérifier si les éléments existent avant d'ajouter des écouteurs d'événements
+            var encrageJuridiqueBtn = document.getElementById('encrageJuridiqueBtn');
+            var fileIcon = document.getElementById('fileIcon');
+            var guideBtn = document.getElementById('guideBtn');
+            var fileIcon2 = document.getElementById('fileIcon2');
+    
+            // Initial state: hide both icons
+            fileIcon.style.display = 'none';
+            fileIcon2.style.display = 'none';
+    
+            if (encrageJuridiqueBtn && fileIcon) {
+                encrageJuridiqueBtn.addEventListener('click', function() {
+                    // Show fileIcon and hide fileIcon2
+                    fileIcon.style.display = 'block';
+                    fileIcon2.style.display = 'none'; // Hide fileIcon2
+                });
+            }
+    
+            if (guideBtn && fileIcon2) {
+                guideBtn.addEventListener('click', function() {
+                    // Show fileIcon2 and hide fileIcon
+                    fileIcon2.style.display = 'block';
+                    fileIcon.style.display = 'none'; // Hide fileIcon
+                });
+            }
+    
+            if (fileIcon2) {
+                fileIcon2.addEventListener('click', function() {
+                    window.open("https://www.facebook.com/DGAADL?mibextid=ZbWKwL", "_blank");
+                });
+            }
+        });
+    </script>
+    
+    <!doctype html>
+    <html lang="ar">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="MHr1ED8Tsb7kLDhA8He298sksreKvY92eoqHflKk">
+    
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    
+        <title>AADL</title>
+    
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Bootstrap JavaScript Bundle (includes Popper.js) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+        <!-- Styles -->
+        <link rel="stylesheet" href="/assets/app-Baoykkrn.css">
+    
+        <!-- Scripts -->
+        <link rel="preload" as="style" href="/build/assets/app-Baoykkrn.css" /><link rel="modulepreload" href="/build/assets/app-D7-XTmo_.js" /><link rel="stylesheet" href="/build/assets/app-Baoykkrn.css" /><script type="module" src="/build/assets/app-D7-XTmo_.js"></script>
+        <!-- Background Image CSS -->
+        <style>
+    
+            /* Optional: Add styles to ensure content visibility over the background */
+            .container, .navbar, .container-fluid {
+                z-index: 2;
+                position: relative;
+            }
+        </style>
+    
+    </head>
+    <body>
+    
+        <div id="app">
+    
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav me-auto"></ul>
+                </div>
+            </div>
+    
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="app">
+                        
+    <div class="welcome-page d-flex flex-column justify-content-center align-items-center text-center text-white position-relative" style="min-height: 100vh; overflow: hidden; padding: 2rem;">
+    
+    
+        <div class="position-absolute top-0 w-100 H-100">
+            <img src="/images/welcome00.png" alt="Cover Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+    
+        </div>
+    
+        <div class="content position-relative z-2 w-100">
+    
+            <!-- Title Section -->
+            <div class="section-activation mx-auto text-center mb-3">
+                <h2 class="display-4 font-weight-bold text-light text-shadow">
+                    <strong>تفعيل حسابات عدل 3 للمكتتبين</strong><br>
+                    Activation des comptes AADL3 pour les souscripteurs
+                </h2>
+            </div>
+    
+            <!-- Subtitle -->
+            <div class="section-minassa mx-auto">
+                <h1 class=" font-weight-bold mt-2 clignotant">
+                  <strong>منصة مخصصة فقط للمكتتبين الذين قاموا بالتسجيل في برنامج عدل 3</strong><br>
+                  Plateforme dédiée uniquement aux souscripteurs déjà inscrits au programme AADL 3
+                </h1>
+            </div>
+    
+            <!-- Registration Button -->
+            <div class="mt-4">
+                <a href="https://aadl.dz/register" class="btn btn-lg btn-primary shadow-lg rounded-pill px-4 py-3">
+                    تفعيل حسابي - Activer mon compte
+                </a>
+            </div>
+    
+            <!-- White horizontal line -->
+            <hr class="rounded-pill mx-auto my-4" style="width: 90%; border-top: 4px solid white; background-color: white;">
+    
+            <!-- Action Buttons -->
+            <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+                <button id="encrageJuridiqueBtn" class="btn btn-lg shadow-lg rounded-pill px-5 py-3 action-btn">
+                    التأسيس القانوني - Encrage Juridique
+                </button>
+                <button id="guideBtn" class="btn btn-lg shadow-lg rounded-pill px-5 py-3 action-btn">
+                    الدليل - Le guide
+                </button>
+            </div>
+    
+            <!-- Document and Video Icons -->
+            <div class="d-flex flex-wrap justify-content-center mt-4 gap-4">
+                <a href="https://aadl.dz/pdf/decrit.pdf" target="_blank" style="text-decoration:none;">
+    
+                    <div id="fileIcon" class="file-box">
+    
+                        <i class="bi bi-file-earmark file-icon"></i>
+                    <p class="file-text">انقر لعرض المستند</p>
+                    <p class="file-subtext">Cliquez pour afficher le document</p>
+                    </div>
+                </a>
+    
+                <div id="fileIcon2" class="file-box">
+                    <div class="file-icon">
+                        <i class="bi bi-camera-video"></i>
+                    </div>
+                    <p class="file-text">انقر لعرض الفيديو</p>
+                    <p class="file-subtext">Cliquez pour afficher la vidéo</p>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+                    </div>
+    
+                                </div>
+            </div>
+    
+        </div>
+    
+        <!-- Bootstrap Icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+        <!-- Scripts -->
+        <link src="/assets/app-D7-XTmo_.js">
+    </body>
+    </html>
+    

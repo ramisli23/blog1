@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="logo.png">
+        <h1>Event Management System</h1>
+    </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#details">Event Details</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#dashboard">Organizer Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="grid">
+    <section id="home">
+        <h2>Upcoming Events</h2>
+        <img src="pngegg1.png">
+       
+        <article>
+            <h3>Event 1</h3>
+            <p>Date: 20th March 2025</p>
+            <p>Location: Annaba</p>
+        </article>
+        <article>
+            <h3>Event 2</h3>
+            <p>Date: 25th March 2025</p>
+            <p>Location: Algiers</p>
+        </article>
+    </section>
+    
+    <section id="details">
+        <h2>Event Details</h2>
+        <p>Details about selected events will appear here.</p>
+        <img src="pngegg.png">
+    </section>
+</div>
+    <section id="register">
+        <h2>Register for an Event</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="event">Select Event:</label>
+            <select id="event" name="event">
+                <option value="event1">Event 1</option>
+                <option value="event2">Event 2</option>
+            </select>
+            
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    
+    <section id="dashboard">
+        <h2>Organizer Dashboard</h2>
+        <form>
+            <label for="event-name">Event Name:</label>
+            <input type="text" id="event-name" name="event-name" required>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            
+            <button type="submit">Add Event</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Event Management System | Badji Mokhtar University Annaba</p>
+    </footer>
+</body>
+</html>

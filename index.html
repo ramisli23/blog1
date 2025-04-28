@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripytogle.js"></script>
+    <title>My Blog</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Blog</h1>
+        <h3>Sharing thoughts and ideas</h3>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Post</a>
+        <a href="#contact" onclick="scrollToSection('contact'); return false; ">Contact</a>
+   
+          
+          
+          <label class="switch">
+            <input type="checkbox" onclick="toggleDarkMode()" checked>
+            <span class="slider round"></span>
+          </label>
+        
+    </nav>
+
+    <section class="container">
+        <h2>Latest Blog Posts</h2>
+ <div    class="divv">
+        <article class="blog-post">
+            <h2>First Blog Post</h2>
+            
+            <img src="https://i.pinimg.com/736x/6c/5f/45/6c5f45a6877ff424cf103aba4881c7e4.jpg">
+            
+            <p>We Data Science students are confident that we are better than any other faction.
+                <a href="#">Read more...</a>
+            </p>
+        </article>
+
+        <article class="blog-post">
+            <h2>Second Blog Post</h2>
+            <img src="https://i.pinimg.com/736x/95/46/79/954679f74a101e68bb306158d87bceb3.jpg">
+            <p>Surely, we Artificial Intelligence students are superior in any subject that requires development.
+                <a href="#">Read more...</a>
+            </p>
+        </article>
+    </div>
+    </section>
+
+    <section class="container">
+        <h2>First Blog Post</h2>
+       <img src="//i.pinimg.com/736x/86/fe/44/86fe443c2535279d16c52687fe0ba87c.jpg">
+       
+        <p><strong>Posted on: February 22, 2025</strong></p>
+        <p>This is a hard debate.</p>
+        <p>Join us to confirm who is the better faction.</p>
+        <p>Gryffindor vs Slytherin</p>
+        <p><strong>PS:</strong> For you to decide who is the Gryffindor and who is the Slytherin!</p>
+    </section>
+
+    <section id="contact" class="container contact-form">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 My Blog. All Rights Reserved.</p>
+    </footer>
+
+        <div id="alertCard" class="alert-card hidden">
+            <div class="alert-content">
+                <h3>Message Sent!</h3>
+                <p>Your message has been successfully submitted. Thank you for contacting us!</p>
+                <button id="closeAlert" class="close-btn">Close</button>
+            </div>
+        </div>
+    </body>
+    </html>
+</body>
+</html>
